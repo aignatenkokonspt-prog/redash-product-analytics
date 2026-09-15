@@ -13,7 +13,7 @@ This project presents an Executive Health Check Dashboard built in Redash using 
 
 ### 1. Financial Metrics & Unit Economics (P&L)
 * **Dashboard Widgets:** Total Metrics (Revenue, Costs, Gross Profit) & Profit Trend.
-* **SQL Query:** [01_financial_metrics_pnl.sql](sql/01_financial_metrics_pnl.sql)
+* **SQL Query:** [sql/01_financial_metrics.sql)
 * **What it shows:** Daily revenue, variable costs (assembly, delivery, courier bonuses), VAT tax, and gross margin %.
 
 ### 2. User Growth & Audience Breakdown
