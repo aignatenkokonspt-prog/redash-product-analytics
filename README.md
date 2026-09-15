@@ -5,8 +5,9 @@
 This project presents an Executive Health Check Dashboard built in Redash using PostgreSQL. The goal is to monitor daily product health, unit economics, audience growth, monetization, and user retention for an e-commerce delivery service.
 
 ## Dashboard Preview
-*(Upload your dashboard screenshot to GitHub and link it here)*
+[Executive Health Check Dashboard](docs/dashboard_preview.png)
 
+> **Live Dashboard Link:** [View Interactive Dashboard in Redash](https://redash.public.karpov.courses/dashboards/10958-total_metrics)
 ---
 
 ## SQL Queries & Dashboard Structure
