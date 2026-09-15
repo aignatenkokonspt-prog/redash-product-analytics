@@ -33,7 +33,7 @@ This project presents an Executive Health Check Dashboard built in Redash using 
 
 ### 5. User Retention & Cohort Analysis
 * **Dashboard Widget:** Retention Pivot Table (Cohorts).
-* **SQL Query:** `sql/05_retention_cohorts.sql` *(Add link when uploaded)*
+* **SQL Query:** [05_retention_cohorts.sql](sql/05_retention_cohorts.sql)
 * **What it shows:** Cohort retention matrix tracking user return rates on Day 1, Day 2, etc., from their first order date.
 
 ---
