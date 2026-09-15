@@ -28,7 +28,7 @@ This project presents an Executive Health Check Dashboard built in Redash using 
 
 ### 4. Operations & Order Cancellations
 * **Dashboard Widget:** Canceled Orders Share (%).
-* **SQL Query:** `sql/04_canceled_orders_share.sql` *(Add link when uploaded)*
+* **SQL Query:** [04_canceled_orders_share.sql](sql/04_canceled_orders_share.sql)
 * **What it shows:** Percentage of canceled orders per day to monitor operational issues or delivery delays.
 
 ### 5. User Retention & Cohort Analysis
