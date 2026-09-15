@@ -23,7 +23,7 @@ This project presents an Executive Health Check Dashboard built in Redash using 
 
 ### 3. Monetization & Average Order Values
 * **Dashboard Widget:** ARPU, ARPPU, AOV Trends.
-* **SQL Query:** `sql/03_arpu_arppu_aov.sql` *(Add link when uploaded)*
+* **SQL Query:** [03_arpu_arppu_aov.sql](sql/03_arpu_arppu_aov.sql)
 * **What it shows:** Average Revenue Per User (ARPU), Average Revenue Per Paying User (ARPPU), and Average Order Value (AOV) over time.
 
 ### 4. Operations & Order Cancellations
