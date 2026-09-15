@@ -13,6 +13,7 @@ Business Rules & Logic:
    - Includes only non-canceled orders.
    - Applies reduced VAT rate of 10% for essential goods list, 20% standard rate for others.
    - Formula for 10% VAT: price * 10/110.0; Formula for 20% VAT: price * 20/120.0.
+     Note: ROUND() is kept inside SUM() to match the task logic. In production, it's better to round after aggregation.
    - Values rounded to 2 decimal places per product item.
 
 2. Variable & Fixed Costs Mechanics:
