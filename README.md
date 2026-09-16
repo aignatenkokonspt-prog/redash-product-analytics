@@ -23,28 +23,46 @@ This project presents an Executive Health Check Dashboard built in Redash using 
      1.4M to 2.3M RUB.
   * **Mid-week Dip:** A temporary drop occurs around Sep 6 (1.3M RUB), showing probable weekly seasonality.
   * **Cost Optimization:** Initially, costs exceeded revenue. After Sep 1, revenue outgrew costs due to changes in fixed/variable cost logic.
+  * **Daily Break-even:** Daily action profit turned positive on September 1st right after cost model updates.
+  * **Cumulative Break-even:** Cumulative overall project profit reached positive values on September 6th.
+  * **Current Dynamic:** Upward trend for both daily margins and cumulative net metrics (100-150K RUB daily profit). 
 
 ### 2. User Growth & Audience Breakdown
 * **Dashboard Widget:** DAU (New vs. Returning Users).
 * **SQL Query:** [02_dau_new_old_users.sql](sql/02_dau_new_old_users.sql)
-* **What it shows:** Daily Active Users split by first-time users (New) and returning users (Old) to track acquisition and user activity.
+* **Key Takeaways:**
+  * **User Dynamic:** Overall active audience shows a healthy upward trend with stable new user acquisition.
+  * **Mid-week Dip:** A clear drop occurred on September 6th, confirming weekly seasonality.
+  * **Audience Balance:** The decline affected both new and returning users equally, ruling out single-cohort issues.
 
 ### 3. Monetization & Average Order Values
 * **Dashboard Widget:** ARPU, ARPPU, AOV Trends.
 * **SQL Query:** [03_arpu_arppu_aov.sql](sql/03_arpu_arppu_aov.sql)
-* **What it shows:** Average Revenue Per User (ARPU), Average Revenue Per Paying User (ARPPU), and Average Order Value (AOV) over time.
+* **Key Takeaways:**
+  * **Order Frequency:** ARPU and ARPPU growth is driven by purchase frequency, as AOV remains flat (~380–400 RUB).
+  * **Parallel Curves:** ARPU and ARPPU move parallel to each other, showing a consistent ratio of active-to-paying users.
+ 
 
 ### 4. Operations & Order Cancellations
 * **Dashboard Widget:** Canceled Orders Share (%).
 * **SQL Query:** [04_canceled_orders_share.sql](sql/04_canceled_orders_share.sql)
-* **What it shows:** Percentage of canceled orders per day to monitor operational issues or delivery delays.
+* **Key Takeaways:**
+  * **Operational Health:** Order cancellation rate is stable at around ~5%.
+  * **Root Cause Check:** This stability proves that the drop in DAU and revenue on September 6th was not caused by technical failures.
 
 ### 5. User Retention & Cohort Analysis
 * **Dashboard Widget:** Retention Pivot Table (Cohorts).
 * **SQL Query:** [05_retention_cohorts.sql](sql/05_retention_cohorts.sql)
-* **What it shows:** Cohort retention matrix tracking user return rates on Day 1, Day 2, etc., from their first order date.
+* **Key Takeaways:**
+  * **Cohort Analysis:** Tracks cohort drop-offs to evaluate long-term retention and marketing acquisition quality.
 
----
+## Executive Summary & Final Verdict
+
+* **Financial Health:** Revenue and cost dynamics are on an upward trend. Cost model optimizations on September 1st successfully shifted the project into profit.
+* **Break-even Timeline:** Daily profit reached break-even on September 1st, and cumulative project profit turned positive on September 6th.
+* **Seasonality vs Operations:** The dip on September 6th was caused by normal weekly seasonality (affecting both new and old users equally), while operational metrics remained healthy with cancellations stable at ~5%.
+* **Growth Driver:** Monetization growth (ARPPU) is driven by increased purchase frequency per user rather than price changes, as AOV stayed flat (~380–400 RUB).
+
 
 ## Tech Stack
 * **Database:** PostgreSQL
