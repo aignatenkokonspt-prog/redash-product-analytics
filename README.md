@@ -17,7 +17,12 @@ This project presents an Executive Health Check Dashboard built in Redash using 
 ### 1. Financial Metrics & Unit Economics (P&L)
 * **Dashboard Widgets:** Total Metrics (Revenue, Costs, Gross Profit) & Profit Trend.
 * **SQL Query:** [01_financial_metrics.sql](sql/01_financial_metrics.sql)
-* **What it shows:** Daily revenue, variable costs (assembly, delivery, courier bonuses), VAT tax, and gross margin %.
+* **Key Takeaways:**
+  * **Revenue Growth:** Revenue shows a strong positive trend because the service is new and growing. 
+  * **Weekend Effect:** Growth peaks on Friday–Sunday when food delivery demand is highest.From Sep 2 to 4, revenue increased from
+     1.4M to 2.3M RUB.
+  * **Mid-week Dip:** A temporary drop occurs around Sep 6 (1.3M RUB), showing probable weekly seasonality.
+  * **Cost Optimization:** Initially, costs exceeded revenue. After Sep 1, revenue outgrew costs due to changes in fixed/variable cost logic.
 
 ### 2. User Growth & Audience Breakdown
 * **Dashboard Widget:** DAU (New vs. Returning Users).
