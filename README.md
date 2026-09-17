@@ -1,8 +1,12 @@
 
-# E-Commerce Product & Financial Analytics (Redash)
+# E-Commerce Health Check:    Product, Unit Economics & Operational Dashboard (Redash)
 
 ## Project Overview
-This project presents an Executive Health Check Dashboard built in Redash using PostgreSQL. The goal is to monitor daily product health, unit economics, audience growth, monetization, and user retention for an e-commerce delivery service.
+This project presents an E-Commerce Health Check Dashboard built in Redash using PostgreSQL. 
+
+The dashboard provides a unified view of core metrics across the entire product pipeline: tracking unit economics (P&L), user acquisition and DAU dynamics, monetization patterns, and operational stability. 
+
+It helps product, marketing, and operations teams track daily service performance.
 
 ## Dashboard Preview
 ![Executive Health Check - Part 1](total_metrics_screen1.png)
