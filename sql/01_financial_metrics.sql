@@ -14,18 +14,17 @@ Business Rules & Logic:
    - Applies reduced VAT rate of 10% for essential goods list, 20% standard rate for others.
    - Formula for 10% VAT: price * 10/110.0; Formula for 20% VAT: price * 20/120.0.
      Note: ROUND() is kept inside SUM() to match the task logic. In production, it's better to round after aggregation.
-   - Values rounded to 2 decimal places per product item.
+
 
 2. Variable & Fixed Costs Mechanics:
    - Assembly Cost: Charged on order creation date (non-canceled). 140 RUB (Aug) -> 115 RUB (Sept).
    - Delivery Pay: 150 RUB per delivered order on actual delivery date.
    - Courier Bonus: Paid on delivery date for 5+ deliveries/day. 400 RUB (Aug) -> 500 RUB (Sept).
-   - Fixed Costs (Warehouse Rent): 120,000 RUB/day (Aug) -> 150,000 RUB/day (Sept).
+   - Fixed Costs: 120,000 RUB/day (Aug) -> 150,000 RUB/day (Sept).
 
 3. Margin Metrics & Window Functions:
    - Gross Profit = Revenue - Costs - VAT Tax.
    - Cumulative Running Totals calculated via SUM() OVER (ORDER BY date).
-   - Daily & Cumulative Margin Ratio (%) calculated and rounded to 2 decimal places.
 
 SQL Tech Stack: CTEs, Window Functions (SUM OVER), FULL OUTER JOINs, UNNEST, CASE WHEN, COALESCE.
 ================================================================================
