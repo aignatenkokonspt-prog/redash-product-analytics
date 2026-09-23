@@ -1,27 +1,25 @@
 
-# E-Commerce Health Check:    Financial Metrics , Unit Economics & Operational Dashboard (Redash)
+# E-Commerce Health Check: Financial Metrics , Unit Economics & Operational Dashboard (Redash)
 
-## Project Overview
 This project presents an E-Commerce Health Check Dashboard built in Redash using PostgreSQL. 
-
 The dashboard monitors company health across four areas: financial performance (P&L), audience growth (DAU, Retention), 
 monetization (ARPU, ARPPU, AOV), and operational stability (Canceled orders share). 
 
-It helps product, marketing, and operations teams track daily service performance.
+**Live Dashboard Link:** [View Interactive Dashboard in Redash](https://redash.public.karpov.courses/dashboards/10958-total_metrics)
+
+---
+
+## Tech Stack
+* **Database:** `PostgreSQL`
+* **BI & Visualization:** `Redash`
+* **SQL Techniques:** `CTEs`, `Window Functions` (`SUM OVER`, `COUNT DISTINCT OVER`), `Aggregations`, `CASE WHEN`, `UNNEST`, `FULL OUTER JOIN`, `Pivot Data Structures`
+* **Analytical Frameworks:** Unit Economics (`CAC`, `ROI`, `Payback Period`), Cohort Analysis (`Retention Rate`)
+---
 
 ## Dashboard Preview
 ![Executive Health Check - Part 1](total_metrics_screen1.png)
 
 ![Executive Health Check - Part 2](total_metrics_screen2.png)
-
-> **Live Dashboard Link:** [View Interactive Dashboard in Redash](https://redash.public.karpov.courses/dashboards/10958-total_metrics)
----
-
-
-## Tech Stack
-* **Database:** PostgreSQL
-* **BI & Visualization:** Redash
-* **SQL Features Used:** CTEs, Window Functions (`SUM OVER`, `COUNT DISTINCT OVER`), Aggregations, `CASE WHEN`, `UNNEST`, `FULL OUTER JOIN`, Pivot Data Structures.
 
 
 ## SQL Queries & Dashboard Structure
