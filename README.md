@@ -17,6 +17,13 @@ It helps product, marketing, and operations teams track daily service performanc
 > **Live Dashboard Link:** [View Interactive Dashboard in Redash](https://redash.public.karpov.courses/dashboards/10958-total_metrics)
 ---
 
+
+## Tech Stack
+* **Database:** PostgreSQL
+* **BI & Visualization:** Redash
+* **SQL Features Used:** CTEs, Window Functions (`SUM OVER`, `COUNT DISTINCT OVER`), Aggregations, `CASE WHEN`, `UNNEST`, `FULL OUTER JOIN`, Pivot Data Structures.
+
+
 ## SQL Queries & Dashboard Structure
 
 ### 1. Financial Metrics
@@ -69,7 +76,3 @@ It helps product, marketing, and operations teams track daily service performanc
 * **Growth Driver:** Monetization growth (ARPPU) is driven by increased purchase frequency per user rather than price changes, as AOV stayed flat (~380–400 RUB).
 
 
-## Tech Stack
-* **Database:** PostgreSQL
-* **BI & Visualization:** Redash
-* **SQL Features Used:** CTEs, Window Functions (`SUM OVER`, `COUNT DISTINCT OVER`), Aggregations, `CASE WHEN`, `UNNEST`, `FULL OUTER JOIN`, Pivot Data Structures.
