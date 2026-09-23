@@ -7,9 +7,9 @@ Task:
 Calculate daily Cohort Retention Rates to track user return behavior over time.
 
 Key Business Logic:
-1. Cohort Assignment: Defines `start_date` for each user using the window function MIN() OVER (PARTITION BY user_id).
+1. Cohort Assignment: Defines start_date for each user using the window function MIN() OVER (PARTITION BY user_id).
 2. Active Days: Calculates day differences between user activity dates and their start date.
-3. Cohort Retention: Divides active unique users on `act_date` by the initial cohort size (`start_users`).
+3. Cohort Retention: Divides active unique users on act_date by the initial cohort size (start_users).
 
 SQL Tech Stack: CTE (WITH clause), Window Functions (MIN OVER PARTITION BY), Date Truncation (date_trunc), INNER JOIN, Aggregations.
 ================================================================================
